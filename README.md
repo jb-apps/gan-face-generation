@@ -4,7 +4,7 @@ Model that alternatively trains a Discriminator with fake and real images and at
 ![Image](https://github.com/jb-apps/gan-face-generation/blob/main/assets/face_generator.png)
 
 # Data
-Dataset provideda at [ CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+Dataset provided at [ CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
 # Architecture
 The project mainly consists of two parts:
@@ -28,7 +28,7 @@ As we want to fool the discriminator we will assume this fake images to be real.
 |-----------|
 |![](https://github.com/jb-apps/gan-face-generation/blob/main/assets/training_results.png)|
 
-As this is a unsupervised method our losses will look different to a supervised one. However, the important take away from this graph is that the losses are stable in time. We can see some spikes in the Generator, this could mean it struggles to generate realistic faces because the images are pretty small (32x32).
+As this is an unsupervised method our losses will look different to a supervised one. However, the important take away from this graph is that the losses are stable in time. We can see some spikes in the Generator, this could mean it struggles to generate realistic faces because the images are pretty small (32x32).
 However, the discriminator seems to be doing just fine as the loss at the beginning is going down, then it stabilises.
 We could keep further training the network.
 
